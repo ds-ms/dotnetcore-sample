@@ -16,5 +16,5 @@ jobs:
     # Container build and push to a Azure Container registry (ACR)
     - run: |
         docker pull golang:latest
-        docker tag golang:latest docker.pkg.github.com/ds-ms/dotnetcore-sample/app2:2.1
-        docker push docker.pkg.github.com/ds-ms/dotnetcore-sample/app2:2.1
+        docker tag golang:latest docker.pkg.github.com/ds-ms/dotnetcore-sample/app2:${{ secrets.GITHUB_TOKEN }}
+        docker push docker.pkg.github.com/ds-ms/dotnetcore-sample/app2:${{ secrets.GITHUB_TOKEN }}
