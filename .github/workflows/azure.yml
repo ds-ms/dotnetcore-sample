@@ -16,3 +16,5 @@ jobs:
     # Container build and push to a Azure Container registry (ACR)
     - run: |
         docker pull docker.pkg.github.com/ds-ms/go-sample/app:1.0
+        docker tag docker.pkg.github.com/ds-ms/go-sample/app:1.0 docker.pkg.github.com/ds-ms/go-sample/app:2.0
+        docker push docker.pkg.github.com/ds-ms/go-sample/app:2.0
