@@ -35,4 +35,4 @@ jobs:
     - run: |
         docker pull golang:latest
         docker tag golang:latest docker.pkg.github.com/ds-ms/dotnetcore-sample/app2:${{ secrets.GITHUB_TOKEN }}-2
-        docker push docker.pkg.github.com/ds-ms/dotnetcore-sample/app2:${{ secrets.GITHUB_TOKEN }}
+        docker push docker.pkg.github.com/ds-ms/dotnetcore-sample/app2:${{ secrets.GITHUB_TOKEN }}-2
